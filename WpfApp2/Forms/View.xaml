@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="View" Height="476" Width="600.853">
+    <Grid Background="#FF6C6F8B">
+        <DataGrid x:Name="ViewDB" HorizontalAlignment="Left" Height="328" Margin="10,67,0,0" VerticalAlignment="Top" Width="566" IsReadOnly="True"  IsSynchronizedWithCurrentItem = "False"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="422,403,0,-9" VerticalAlignment="Top" Width="154" Click="Back_Click" FontSize="16"/>
+        <ComboBox x:Name="SelectView" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="566" SelectionChanged="SelectView_SelectionChanged">
+            <ListBoxItem Content="Животные у которых есть ветеринары"/>
+            <ListBoxItem Content="Меню животных"/>
+        </ComboBox>
+        <Label Content="Выберите представление" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Height="33" Foreground="#FFEBFFA9" FontSize="16"/>
+
+    </Grid>
+</Window>
